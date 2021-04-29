@@ -20,11 +20,13 @@ int main(){
         cout<<"0-SAIR\n";
         cin>>opc;
 
-        cout<<"Informe dois valores:\n";
-        cout<<"Valor 1:";
-        cin>>a;
-        cout<<"Valor 2:";
-        cin>>b;
+        if(opc>0 && opc<5){
+            cout<<"Informe dois valores:\n";
+            cout<<"Valor 1:";
+            cin>>a;
+            cout<<"Valor 2:";
+            cin>>b;
+        }
 
         switch(opc){
 
@@ -43,6 +45,18 @@ int main(){
             case 4:
                 multiplica(a,b);
                 break;
+
+            case 0:
+                cout<<"Fim do programa";
+                break;
+
+            default :
+            {
+                system("cls");
+                cout<<"Opcao INVALIDA";
+                cout<<"\n----------------------";
+                break;
+            }
         }
     }while(opc!=0);
     return 0;
