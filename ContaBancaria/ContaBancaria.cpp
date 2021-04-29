@@ -82,7 +82,7 @@ int main(){
 
 void cadastrarConta(int cont, Conta c[10]){
     system("cls");
-    if(cont<=10){
+    if(cont<10){
         cout<<"cadastre a conta \n";
         cout<<"Numero...: ";
         cin>>c[cont].numero_da_conta;
@@ -97,8 +97,8 @@ void cadastrarConta(int cont, Conta c[10]){
         cout<<"\nConta cadastrada\n\n";
     }
     else{
-        cout<<"Conta nao cadastrada";
-        cout<<"Numero maximo de contas atingido";
+        cout<<"Conta nao cadastrada\n";
+        cout<<"Numero maximo de contas atingido\n\n";
     }
 }
 
@@ -109,7 +109,7 @@ int consultaConta(int n_conta, Conta c[10]){
         if (n_conta == c[i].numero_da_conta){
             cout<<"Conta...: "<<c[i].numero_da_conta<<"\n";
             cout<<"Nome....: "<<c[i].nome<<"\n";
-            cout<<"Saldo...: "<<c[i].saldo<<"\n";
+            cout<<"Saldo...: "<<c[i].saldo<<"\n\n";
             return 1;
         }
         else{
@@ -136,7 +136,7 @@ void deposito(int n_conta, Conta c[10]){
             cin>>v_deposito;
             //somando o saldo atual com o valor do deposito
             c[i].saldo=c[i].saldo+v_deposito;
-            cout<<"Novo Saldo :"<<c[i].saldo<<"\n";
+            cout<<"Novo Saldo :"<<c[i].saldo<<"\n\n";
         }
     }
 }
@@ -156,7 +156,7 @@ void saque(int n_conta, Conta c[10]){
             cin>>v_saque;
             //subtraindo o saldo atual com o valor do saque
             c[i].saldo=c[i].saldo-v_saque;
-            cout<<"Novo Saldo :"<<c[i].saldo<<"\n";
+            cout<<"Novo Saldo :"<<c[i].saldo<<"\n\n";
         }
     }
 }
