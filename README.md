@@ -1,7 +1,7 @@
 # logic-C
  Logic in C++ for studies
 
-## Content next exercise in ligic in C++:
+## Content next exercise in logic in C++:
 
 ### Calculadora
 A calculator simple using basic principle of programing
@@ -19,6 +19,11 @@ Exercise using struct, simulation what can be done on a bank account:
     -struct;
     -vector;
     -for;
+
+### Hello World
+Hello World
+    
+    Hello World
 
 pt-BR
 # logic-C
@@ -42,3 +47,8 @@ Exercicio usando struct, simulando oque pode ser feito em uma conta bancária:
     -struct;
     -vector;
     -for;
+
+### Hello World
+Hello World
+    
+    Hello World
